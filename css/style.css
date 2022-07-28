@@ -5,6 +5,10 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+::selection {
+    background-color: #043061;
+    color: #FFF;
+}
 body, .container, .content {
     display: flex;
     justify-content: center;
@@ -12,7 +16,7 @@ body, .container, .content {
 }
 body {
     min-height: 100vh;
-    background-color: #0077ff;
+    background-color: #043061;
 }
 img {
     user-select: none;
@@ -20,8 +24,8 @@ img {
 .container {
     flex-direction: column;
     width: 440px;
-    background-color: #FFF;
-    border-radius: 10px;
+    border-radius: 5px;
+    background: #FFF;
     padding: 30px 30px 38px;
 }
 .container img {
@@ -42,7 +46,7 @@ img {
 .content .column {
     border-radius: 5px;
     padding: 0 10px;
-    border: 1px solid #0077ff;
+    border: 2px solid #043061;
     width: calc(100% / 3 - 5px);
 }
 .column select {
@@ -53,7 +57,7 @@ img {
     font-size: 19px;
 }
 .container button {
-    background-color: #0077ff;
+    background-color: #043061;
     color: #FFF;
     width: 100%;
     margin-top: 20px;
@@ -63,4 +67,9 @@ img {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s;
+}
+.container button:hover {
+    background-color: #021a35;
+    transform: scale(1.1);
 }
